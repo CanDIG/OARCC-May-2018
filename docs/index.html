@@ -4,22 +4,22 @@
     <meta charset="utf-8" />
     <title>CanDIG: National-Scale Genomics for a Federal Canada</title>
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Average);
-      @import url(https://fonts.googleapis.com/css?family=Oswald);
+      @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+      @import url(https://fonts.googleapis.com/css?family=Lato);
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
       body {
-        font-family: 'Average';
+        font-family: 'Lato';
       }
       h1, h3 {
-        font-family: 'Oswald';
-        font-weight: 400;
+        font-family: 'Raleway';
+        font-weight: 700;
         color: rgb(36, 178, 43);
         margin-bottom: 0;
       }
       h2, h4 {
-        font-family: 'Oswald';
-        font-weight: 400;
+        font-family: 'Raleway';
+        font-weight: 700;
         color: rgb(13, 115, 178);
         margin-bottom: 0;
       }
@@ -151,35 +151,14 @@
 
       /* Two-column layout */
       .left-column {
-        color: #777;
-        width: 20%;
-        height: 92%;
+        width: 45%;
+        height: 90%;
         float: left;
       }
-
-      .left-column h2,h3,h4 {
-        color: #555;
-      }
-      .left-column h2:last-of-type, .left-column h2:last-child, .left-column h4:last-child {
-        color: rgb(36, 178, 43);
-      }
-      .left-column h3:last-of-type, .left-column h3:last-child {
-        color: rgb(13, 115, 178);
-      }
       .right-column {
-        width: 75%;
+        width: 45%;
+        height: 90%;
         float: right;
-        padding-top: 1em;
-        padding-bottom: 0em;
-      }
-      .right-column-cont {
-        width: 75%;
-        float: right;
-        padding-top: 0em;
-        margin-top: -1em;
-      }
-      .large-text {
-        font-size: 150%
       }
     </style>
   </head>
@@ -191,7 +170,7 @@ class: center, middle, title
 ---
 count: false
 # This is a Title
-## Along with Its Subtitle
+## And Look, it has a Subtitle 
 
 <br/>
 <br/>
@@ -207,51 +186,38 @@ Author Name<br/>
 ---
 class: normal
 layout: false
-.left-column[
-  ## Running titles
-]
-.right-column[
+# A Concise Title
 
-You can use left- and right- column to split the page into columns
+You can insert images like this
 
-And insert images like this
 .center[<img src="Diagrams/new-architecture.png" width=50%>]
-]
+
+(You usually need to use HTML explicitly because there's usually some sizing you have to do)
+
 --
-.right-column[
 
-Slides separated by two columns continue
+Whole-page slides separated by two columns continue
+---
+class: normal
+layout: false
+# Two columns
+
+.left-column[
+
+.center[<img src="Diagrams/need-federation.png" width=50%>]
+
+We can have some stuff over here
+
+]
+.right-column[
+But also some stuff over here
+
+.center[<img src="Diagrams/decentralized.png" width=50%>]
 
 ]
 ---
 class: normal
-.left-column[
-  ## Running titles
-
-  ### Subtitle
-]
-.right-column[
-I personally like to use the left column, if I'm using it at all,
-to keep track of where we are in the talk..
-]
----
-.left-column[
-  ## Running titles
-
-  ### Subtitle
-
-  ### Further Sub
-]
-.right-column[
-
-It's useful for longer, highly structured talks.
-]
----
-class: normal
-# Full page slides
-
-Of course you don't need to do this!  You can just have full page slides.
-
+# Code and stuff
 
 ```python
 def code(x, y):
@@ -278,8 +244,8 @@ What is a slide deck without bullet points?
 ---
 count: false
 class: center, middle, inverse
-## You want to break the talk up into sections?
-### We can do that
+# You want to break the talk up into sections?
+## We can do that
 ---
 class: normal
 # Remark
