@@ -16,12 +16,20 @@
         font-weight: 700;
         color: rgb(36, 178, 43);
         margin-bottom: 0;
+        -webkit-font-feature-settings: "lnum" 1; 
+        -moz-font-feature-settings: "lnum"; 
+        font-feature-settings: "lnum" 1; 
+        font-variant-numeric: lining-nums;
       }
       h2, h4 {
         font-family: 'Raleway';
         font-weight: 700;
         color: rgb(13, 115, 178);
         margin-bottom: 0;
+        -webkit-font-feature-settings: "lnum" 1; 
+        -moz-font-feature-settings: "lnum"; 
+        font-feature-settings: "lnum" 1; 
+        font-variant-numeric: lining-nums;
       }
 
       .remark-slide-content h1 { font-size: 1.5em; }
@@ -83,7 +91,7 @@
 
       .title {
         background: #ffffff;
-        background-image: url(assets/background.png), url(assets/logo-plus-text.png), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='800' height='100' ><text x='10' y='75' font-family='Helvetica' font-style='italic'>National Analysis of Distributed Private Genomic Data</text></svg>");
+        background-image: url(assets/background-alpha.png), url(assets/logo-plus-text.png), url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='800' height='100' ><text x='10' y='75' font-family='Helvetica' font-style='italic'>National Analysis of Distributed Private Genomic Data</text></svg>");
         background-position: center, bottom right, bottom left;
         background-size: contain, 200px, 1000px;
         background-repeat: no-repeat;
@@ -102,12 +110,13 @@
       }
 
       .title h1, h2, h3 {
-        text-shadow: 0 0 20px #FFF;
+        text-shadow: -5px 3px 5px #FFF;
       }
 
-      .inverse h1, .inverse h2 {
+      .inverse h1, .inverse h2, .inverse h3, .inverse h4 {
         color: #f3f3f3;
         line-height: 0.8em;
+        text-shadow: 0 0 20px #333;
       }
       .inverse a {
         color: #a3a3f3;
@@ -165,19 +174,11 @@
   <body>
 <textarea id="source">
 name: title
-layout: true
 class: center, middle, title
----
 count: false
 # This is a Title
 ## And Look, it has a Subtitle 
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 
