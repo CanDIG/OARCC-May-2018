@@ -312,8 +312,42 @@ class: normal
 
 .pull-right[<img width="100%" src="Diagrams/need-federation.png">]
 
-With researchers unable 
+Those silos don't make research impossible, but greatly reduce the number and type of questions being asked.
 
+To perform cross-silo research, one must:
+
+--
+
+* Know that there is data out there that would be useful for your study
+* Know where it is and who to get permission from
+* Get permission to use the data:
+    - Bespoke policy agreement, involving legal teams or REB evaluation
+* Get permission to either work within the silo, 
+    - Usage agreements
+* Or get permission to transfer data out
+    - Bespoke Data Transfer agreement, possible update to REB
+
+--
+
+* Perform the analysis, which may or may not find something
+
+---
+class: normal
+# Siloed Data Is Squandered Data
+
+.pull-right[<img width="100%" src="Diagrams/need-federation.png">]
+
+But health researchers need to be able to analyze as large sample sizes as possible:
+
+* Rare diseases (which collectively affect 5%+ of people):
+    - Need large numbers of subjects to escape the \\(N=1\\) problem!
+
+* Precision oncology:
+    - Many cancer cases are rare diseases if you look closely enough
+
+* Statistical power:
+    - Most diseases have multiple causes, each one with weak signal
+    - Need large study to separate signal from noise
 ---
 class: normal
 # Our International Colleagues Have A Cunning Plan:
@@ -365,20 +399,42 @@ class: normal
 ---
 class: normal
 # Canada is a Federation
-
 .pull-right[<img width="100%" src="assets/img/healthcare.png">]
 
-In Canada, healthcare, and so health data, is a matter of exclusive provincial jursidiction
+<br/>
+In Canada, healthcare &mdash; and so health data &mdash; is a matter of exclusive provincial jursidiction
 
-* Each province has made its own decision about privacy tradeoffs that works for it
+* Each province has made its own decision about privacy tradeoffs based on its populations' own choices
 
-* Even if 
+* Even if centralization of data scaled, differing provincial statutory and regulatory requirements would make it all but impossible
+
+--
+
+But Canada is a federation, and understands the issues around data federation
+
+* _E.g._, CIHI - the [Canadian Institute for Heath Information](https://www.cihi.ca/en)
 
 ---
 class: normal
 # The CanDIG Project
 
+A _Canadian_ approach to analysis of genomic data: 
+* National-scale populations 
+* Respecting provincial, institutional stewards local control over their data, users.
+
 .center[<img width="100%" src="assets/img/map.png">]
+---
+class: normal
+# The CanDIG Project
+
+.pull-right[<img width="100%" src="assets/img/map.png">]
+
+* Funded 4 year CFI cyberinfrastructure project
+
+* 1 year into the effort
+
+* Building 
+
 ---
 class: normal
 # Decentralized
@@ -426,11 +482,16 @@ class: normal
 ## Governance Infrastructure
 
 ---
-class: blank
+class: normal
 # Canada will save the Genomics* World
-.pull-right[<img width="100%" src="assets/img/patriotic.png">]
 
-(*and other big-data fields)
+.center[<img width="90%" src="assets/img/patriotic.png">]
+
+---
+class: normal
+# And You Can Too
+.center[<img width="80%" src="assets/img/your-name-here.png">]
+
 ---
 class: normal
 # Image Credits
@@ -464,9 +525,67 @@ Slide 11 - Genomic privacy
 
     </textarea>
     <script src="remark/remark-latest.min.js">
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <script type="text/javascript">
+      var options = {};
+      var renderMath = function() {
+        renderMathInElement(document.body);
+      }
+      var slideshow = remark.create(options, renderMath);
     </script>
-     <script>
-       var slideshow = remark.create();
-     </script>
+  </body>
+</html>
+---
+class: blank
+# Canada will save the Genomics* World
+.pull-right[<img width="100%" src="assets/img/patriotic.png">]
+
+---
+class: normal
+# Image Credits
+
+Slide 2 - Patriotic Montage
+* Michael Kwan, https://www.flickr.com/photos/beyondtherhetoric/4755720719
+* DaPuglet, https://www.flickr.com/photos/dapuglet/14340135287
+* IHA Rentals, https://www.iha.com/canada-countryside-rentals/2OJs/
+* E Pluribus Anthony, https://en.wikipedia.org/wiki/Geography_of_Canada
+
+Slide 3 - Silomeggadon
+* https://pxhere.com/en/photo/1129434
+* Dmitrijs Purgalvis, https://commons.wikimedia.org/wiki/File:Abandoned_factory_-_panoramio_(10).jpg
+* Roy Luck, https://commons.wikimedia.org/wiki/File:Metalwork,_abandoned_US_Steel_iron_mill_(8907655571).jpg
+
+Slide 6 - Metagenomics
+* <a href="https://twitter.com/erikgarrison/status/969560993922736128">https://twitter.com/erikgarrison/status/969560993922736128</a>
+
+Slide 8 - Transcriptomics
+* <a href="http://www.gene-quantification.de">http://www.gene-quantification.de</a>
+---
+class: normal
+# Image Credits (cont'd)
+
+Slide 9 - Genomic Medicine
+* McCarthy, McLeod, and Ginsburg, &ldquo;Genomic Medicine: A Decade of Successes, Challenges, and Opportunities&rdquo; http://stm.sciencemag.org/content/5/189/189sr4.full
+
+Slide 11 - Genomic privacy
+* Julie McMurray https://pixabay.com/en/genomic-privacy-genomic-security-3302478/
+
+
+    </textarea>
+    <script src="remark/remark-latest.min.js">
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/contrib/auto-render.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <script type="text/javascript">
+      var options = {};
+      var renderMath = function() {
+        renderMathInElement(document.body);
+      }
+      var slideshow = remark.create(options, renderMath);
+    </script>
   </body>
 </html>
