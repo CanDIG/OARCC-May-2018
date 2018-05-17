@@ -538,6 +538,39 @@ API-first approach:
 ---
 class: normal
 # Technical: Modern, Secure, Standards-Based
+## Send Compute to Data
+
+.pull-right[<img width="100%" src="Diagrams/images.png">]
+
+Don't want to &mdash; can't &mdash; pull data to where the analysis will take place
+
+* Send the processing to the data
+
+* Bundle up the analysis 
+
+* Send it, where access can be controlled in a very fine-grained manner
+
+* Provide access to the resulting data through APIs
+
+---
+class: normal
+# Technical: Modern, Secure, Standards-Based
+## Send Compute to Data
+
+Have done extensive benchmarking of different container approaches 
+
+* Some of the first to have done this
+
+.pull-right[<img width="100%" src="assets/img/containers.png">]
+
+Building a container-based infratructure for genomics:
+
+* Docker for long-running services
+
+* Singularity for bioinformatics tasks
+---
+class: normal
+# Technical: Modern, Secure, Standards-Based
 ## Authorization
 
 * Rule-Based and Attribute-Based access control
@@ -557,6 +590,69 @@ So far we've described silos
 * But silos with a building code for standardized cross-silo access
 
 * Security, Autonomy, while being able to interoperate
+---
+class: normal
+# Technical
+## Federated
+
+.pull-right[<img width="85%" src="assets/img/federated-1kg-batch.png">]
+
+We've demonstrated that this approach works, using the [Thousand Genomes](https://en.wikipedia.org/wiki/1000_Genomes_Project) data set
+
+* Reproduce 1000 genomes variants analysis
+
+    - Foundational results of population genomics
+
+* Reproduce them as long-running batch processes
+
+---
+class: normal
+# Technical
+## Federated
+
+.pull-right[<img width="85%" src="assets/img/federated-1kg-batch.png">]
+
+We've demonstrated that this approach works, using the [Thousand Genomes](https://en.wikipedia.org/wiki/1000_Genomes_Project) data set
+
+* Reproduce 1000 genomes variants analysis
+
+    - Foundational results of population genomics
+
+* Reproduce them as long-running batch processes
+
+.pull-right[<img width="85%" src="assets/img/federated-1kg-interactive.png">]
+
+* Also run them interactively in Jupyter or RStudio notebooks
+
+---
+class: normal
+# Governance
+
+.pull-right[<img width="85%" src="assets/img/data-governance.png">]
+
+---
+class: normal
+# Governance 
+## Research Projects - PROFYLE
+
+.pull-right[<img width="100%" src="assets/img/profyle.png">]
+
+---
+class: normal
+# Governance 
+## Research Projects - PROFYLE
+
+.pull-right[<img width="100%" src="assets/img/tf4cn.png">]
+
+---
+class: normal
+# Governance 
+## Technical Choices In Support of Governance
+
+Data Governance is not a set of problems that can be solved by technological measures
+
+However, Technological 
+
 ---
 class: normal
 # Randomization Approaches to Privacy
@@ -593,6 +689,16 @@ class: normal
 # Differential Privacy
 
 ## Guarantees
+
+.pull-right[<img width="100%" src="assets/img/diff-privacy.png">]
+
+Data *subject*: &ldquo;There is a quantifiable, minimal, cost to my privacy by participating in this database&rdquo;.
+
+Data *analyst*: &ldquo;I would get an essentially equal distribution of answers from this query if any one row had been absent from the database&rdquo;.
+---
+class: normal
+# Consent Codes for Computable Authorization
+## ADA-M
 
 .pull-right[<img width="100%" src="assets/img/diff-privacy.png">]
 
