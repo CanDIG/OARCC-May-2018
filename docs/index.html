@@ -653,7 +653,9 @@ The PROFYLE project
 
     - Provide a dashboard 
 
-    - 
+    - Provide ability to explore the data - see variants by gene, _etc_
+
+    - Look for commonalities between these cases
 
 * Provide fine-grained access for researches already approved, while also allowing aggregated results for those with less acess
 ---
@@ -663,6 +665,15 @@ class: normal
 
 .pull-right[<img width="100%" src="assets/img/tf4cn.png">]
 
+Support a clinical basket-style cancer trial
+
+Provide clinician access to detailed information on 
+
+* subjects for assigning to sub-trials
+
+* subject progress
+
+Provide aggregated results afterwards
 ---
 class: normal
 # Governance 
@@ -670,7 +681,13 @@ class: normal
 
 Data Governance is not a set of problems that can be solved by technological measures
 
-However, Technological 
+However, technological tools can open up some options
+
+We have built in from the beginning two approaches which give some flexibility
+
+* Differential privacy for private provision of aggregated data
+
+* ADA-M for computable consent and authorization
 
 ---
 class: normal
@@ -707,49 +724,42 @@ But at the same time, can estimate true overall frequencies (and correlations!) 
 class: normal
 # Differential Privacy
 
+.center[<img width="70%" src="assets/img/diff-privacy.png">]
+
+Different approach: keep inputs, add noise to outputs
+
+Add enough noise (and of right type) to ensure following guarantee:
+
+* Probability of an individual's data being leaked because it is in the data set is
+
+    - bounded
+
+    - small
+---
+class: normal
+# Differential Privacy
+
 ## Guarantees
 
-.pull-right[<img width="100%" src="assets/img/diff-privacy.png">]
 
 Data *subject*: &ldquo;There is a quantifiable, minimal, cost to my privacy by participating in this database&rdquo;.
 
 Data *analyst*: &ldquo;I would get an essentially equal distribution of answers from this query if any one row had been absent from the database&rdquo;.
 ---
 class: normal
-# Consent Codes for Computable Authorization
+# Automatable Discovery and Access Matrix
 ## ADA-M
 
-.pull-right[<img width="100%" src="assets/img/diff-privacy.png">]
+.pull-right[<img width="100%" src="assets/img/ada-m.png">]
 
-Data *subject*: &ldquo;There is a quantifiable, minimal, cost to my privacy by participating in this database&rdquo;.
+Comprehensive list of use and access rights for a data
 
-Data *analyst*: &ldquo;I would get an essentially equal distribution of answers from this query if any one row had been absent from the database&rdquo;.
----
-class: normal
-# Part of an International Community
-## Technical Infrastructure
+With corresponding consent text for patients, clinicians
 
-.center[<img width="75%" src="Diagrams/layered-APIs.png">]
----
-class: normal
-# Send Processing to the Data
+Machine readable!
 
-.pull-right[<img width="100%" src="Diagrams/images.png">]
----
-class: normal
-# Federated Queries over Processed Data
+* Can make run-time decisions about what computations are authorizable
 
-.pull-right[<img width="100%" src="assets/img/federated-1kg-batch.png">]
----
-class: normal
-# Federated Queries over Processed Data
-
-.pull-right[<img width="100%" src="assets/img/federated-1kg-jupyter.png">]
----
-class: normal
-# Part of an International Community
-
-.center[<img width="100%" src="Diagrams/ga4gh-driver.png">]
 ---
 class: normal
 # Part of an International Community
@@ -768,11 +778,7 @@ This fall, CanDIG was made a driver project of the international Global Alliance
 
 We can build on their work (_e.g._, ADA-M, data access standards)
 
----
-class: normal
-# Part of an International Community
-## Governance Infrastructure
-
+We are _already_ helping them build on our work of peer-to-peer federation
 ---
 class: normal
 # Nobody Said Data Federalism Was Easy
