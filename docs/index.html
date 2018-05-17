@@ -433,13 +433,51 @@ class: normal
 
 * 1 year into the effort
 
-* Building 
+* Participation from Canada's largest health genome sequencing centres:
+
+    - McGill University/Genome Québec Innovation Centre
+
+    - Hospital For Sick Children
+
+    - Princess Margaret Cancer Center
+
+    - BC Cancer Care Agency / BC Genome Science Centre
+
+* Building the infrastructures for genomic analyses on national-scale data sets
+
+    - Technological
+
+    - Governance
 
 ---
 class: normal
-# Decentralized
+# Technical: Decentralized
 
 .center[<img width="75%" src="Diagrams/decentralized.png">]
+---
+class: normal
+# Technical: Decentralized
+
+.pull-right[<img width="75%" src="Diagrams/decentralized.png">]
+
+Crucially, we are building a completely decentralized technical infrastructure
+
+* Shared nothing
+
+* Centralized nothing
+
+* Each data steward has complete control over:
+    - Their systeams
+    - Access to the data under their stewardship
+
+---
+class: normal
+# Technical: Modern, Secure
+
+* Using modern, secure web technologies for 
+
+.center-right[<img width="75%" src="Diagrams/OIDC-twopanel.png">]
+
 ---
 class: normal
 # Federated
@@ -455,6 +493,48 @@ class: normal
 # Part of an International Community
 
 .center[<img width="75%" src="Diagrams/ga4gh-driver.png">]
+---
+class: normal
+# Randomization Approaches to Privacy
+
+## Randomize Responses
+
+.pull-right[<img width="100%" src="assets/img/randomized-response.png">]
+
+Old technique for surveying for behaviours which are illegal or have other stigma attached.
+
+&ldquo;Have you ever stolen anything&rdquo;
+
+* \\(p = 0.5\\) - true answer
+
+* \\(p = 0.5\\) - random answer
+
+* &ldquo;bad&rdquo; answer occurs w/ \\(p \approx 0.25\\); “plausible deniability” for any survey respondent.
+---
+class: normal
+# Randomization Approaches to Privacy
+
+## Randomize Responses
+
+.pull-right[<img width="100%" src="assets/img/randomized-response.png">]
+
+But at the same time, can estimate true overall frequencies (and correlations!) knowing the noise model!
+
+* If obtain frequency \\( \hat{f} \\) from the survey instrument, can calculate true frequency  \\(f = 2(\hat{f} - 1/4)\\)
+
+* Need more samples for given variance, but can get accurate results while protecting each individual’s privacy.
+
+---
+class: normal
+# Differential Privacy
+
+## Guarantees
+
+.pull-right[<img width="75%" src="assets/img/differential-privacy.png">]
+
+Data *subject*: &ldquo;There is a quantifiable, minimal, cost to my privacy by participating in this database&rdquo;.
+
+Data *analyst*: &ldquo;I would get an essentially equal distribution of answers from this query if any one row had been absent from the database&rdquo;.
 ---
 class: normal
 # Part of an International Community
@@ -519,15 +599,55 @@ Canada is in the right place to build _now_ the solutions that the genomics worl
 
 * Canadian teams have experience with federated governance, and federated data exchange
 
-* Canadian institutions have the institutional will to build the framework that will allow genomic data sharing to take plcae
+* Canadian institutions have the institutional will to build the framework that will allow genomic data sharing to take place
 
 ---
 class: normal
-# But there's so much to be done!
+# But We Have a Lot to Do!
 
+.left-column[
+* Continue building the technical architecture of each site:
 
-.pull-right[<img width="75%" src="Diagrams/new-architecture.png">]
+    - New technologies: Go, Docker, REST APIs, OpenAPI, OIDC Connect
+]
+.right-column[
+.center[<img width="75%" src="Diagrams/new-architecture.png">]
+]
+---
+class: normal
+# But We Have a Lot to Do!
 
+.left-column[
+* Continue building the technical architecture of each site:
+    - New technologies: Go, Docker, REST APIs, OpenAPI, OIDC Connect
+
+* Design and build the next generation of genomics, bioinformatics, and statistical algorithms:
+    - That work on these completely distributed data sets
+    - That maintain privacy
+]
+.right-column[
+.center[<img width="75%" src="Diagrams/new-architecture.png">]
+.center[<img width="75%" src="Diagrams/need-federation-have-federation.png">]
+]
+---
+class: normal
+# But We Have a Lot to Do!
+
+.left-column[
+* Continue building the technical architecture of each site:
+    - New technologies: Go, Docker, REST APIs, OpenAPI, OIDC Connect
+
+* Design and build the next generation of genomics, bioinformatics, and statistical algorithms:
+    - That work on these completely distributed data sets
+    - That maintain privacy
+
+* Build a governance infrastructure and framework that will maintain privacy and stewardship while removing unnecessary roadblocks
+]
+.right-column[
+.center[<img width="75%" src="Diagrams/new-architecture.png">]
+.center[<img width="75%" src="Diagrams/need-federation-have-federation.png">]
+.center[<img width="50%" src="assets/img/data-governance.png">]
+]
 ---
 class: normal
 # Canada will save the Genomics World
@@ -620,8 +740,9 @@ Slide 9 - Genomic Medicine
 Slide 11 - Genomic privacy
 * Julie McMurray https://pixabay.com/en/genomic-privacy-genomic-security-3302478/
 
-Data governance:
+Slide - Data governance
 * "What is Clinical Governance" - N. Starey, https://commons.wikimedia.org/wiki/File:Smallwhatisclingov.jpg
+
 
     </textarea>
     <script src="remark/remark-latest.min.js">
