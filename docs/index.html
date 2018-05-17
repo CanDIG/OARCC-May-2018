@@ -451,6 +451,18 @@ class: normal
 
 ---
 class: normal
+# De novo
+
+On the technical side, CanDIG is building a new infrastructure _de_ _novo_
+
+.center[<img width="75%" src="Diagrams/new-architecture.png">]
+
+This has provided enormous opportunities; lap our international colleagues
+
+* New technologies: Go, Docker, REST APIs, OpenAPI, OIDC Connect
+
+---
+class: normal
 # Technical: Decentralized
 
 .center[<img width="75%" src="Diagrams/decentralized.png">]
@@ -467,32 +479,84 @@ Crucially, we are building a completely decentralized technical infrastructure
 * Centralized nothing
 
 * Each data steward has complete control over:
-    - Their systeams
+
+    - Their systems
+
     - Access to the data under their stewardship
 
 ---
 class: normal
-# Technical: Modern, Secure
+# Technical: Modern, Secure, Standards-Based
+## Authentication
 
-* Using modern, secure web technologies for 
+* Using modern, secure web technologies for authentication
 
-.center-right[<img width="75%" src="Diagrams/OIDC-twopanel.png">]
+* Standards-based
+
+.center[<img width="75%" src="Diagrams/OIDC-onepanel.png">]
+---
+class: normal
+# Technical: Modern, Secure, Standards-Based
+## Authentication
+
+.pull-right[<img width="100%" src="Diagrams/OIDC-onepanel.png">]
+
+* Each site authenticates its own user with its own login
+
+* Person leaves, logins disabled right away
+
+Standards-based means improved interoperability:
+
+* Work plan drawn up with European Genome-Phenome Archive, ELIXIR Europe
+
+* Interoperability with European bioinformatics initiatives
+---
+class: normal
+# Technical: Modern, Secure, Standards-Based
+## API-Driven
+
+.pull-right[<img width="100%" src="Diagrams/layered-APIs.png">]
+
+* Based on RESTful, web services-style APIs
+
+* No remote log-in to a shell
+
+* Excellent for logging, auditabilty
+
+--
+
+API-first approach:
+
+* Microservices
+
+* API gateway
+
+* Swagger/OpenAPI
+
+* Makes testing, validation straightforward
 
 ---
 class: normal
-# Federated
+# Technical: Modern, Secure, Standards-Based
+## Authorization
 
-.center[<img width="75%" src="Diagrams/need-federation-have-federation.png">]
+* Rule-Based and Attribute-Based access control
+
+.center[<img width="50%" src="assets/img/authorization.png">]
+
+* Authorization policy engine applies policies to each request
 ---
 class: normal
-# De novo
+# Technical
+## Federated
 
-.center[<img width="75%" src="Diagrams/new-architecture.png">]
----
-class: normal
-# Part of an International Community
+.pull-right[<img width="85%" src="Diagrams/need-federation-have-federation.png">]
 
-.center[<img width="75%" src="Diagrams/ga4gh-driver.png">]
+So far we've described silos
+
+* But silos with a building code for standardized cross-silo access
+
+* Security, Autonomy, while being able to interoperate
 ---
 class: normal
 # Randomization Approaches to Privacy
@@ -530,7 +594,7 @@ class: normal
 
 ## Guarantees
 
-.pull-right[<img width="75%" src="assets/img/differential-privacy.png">]
+.pull-right[<img width="100%" src="assets/img/diff-privacy.png">]
 
 Data *subject*: &ldquo;There is a quantifiable, minimal, cost to my privacy by participating in this database&rdquo;.
 
@@ -556,6 +620,29 @@ class: normal
 # Federated Queries over Processed Data
 
 .pull-right[<img width="100%" src="assets/img/federated-1kg-jupyter.png">]
+---
+class: normal
+# Part of an International Community
+
+.center[<img width="100%" src="Diagrams/ga4gh-driver.png">]
+---
+class: normal
+# Part of an International Community
+
+.pull-right[<img width="100%" src="Diagrams/ga4gh-driver.png">]
+
+This fall, CanDIG was made a driver project of the international Global Alliance for Genomics and Health (GA4GH)
+
+* International standards-setting effort
+
+* Interoperability
+
+* Regulatory and Ethics
+
+* Advocate 
+
+We can build on their work (_e.g._, ADA-M, data access standards)
+
 ---
 class: normal
 # Part of an International Community
